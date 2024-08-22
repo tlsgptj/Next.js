@@ -1,3 +1,4 @@
+import ProductList from "@/components/ProductList";
 import SearchForm from "@/components/SearchForm";
 import { useRouter } from "next/router";
 
@@ -10,6 +11,7 @@ export default function Search() {
             <h1>Search 페이지</h1>
             <SearchForm initalValue={q}/>
             <h2>{q} 검색 결과</h2>
+            <ProductList/>
         </div>
     );
 }
